@@ -12,6 +12,16 @@ elif [[ $unamestr == 'Darwin' ]]; then
   platform='darwin'
 fi
 
+
+#Tmux
+alias tm='tmux'
+alias tkeys="tmux list-keys"
+alias tcommands='tmux list-commands'
+alias tb='tmux bind-key'
+alias ta='tmux attach -t '
+alias tls='tmux ls'
+alias tk='tmux kill-session  -t'
+
 # YADR support
 alias yav='yadr vim-add-plugin'
 alias ydv='yadr vim-delete-plugin'
@@ -67,7 +77,7 @@ alias zr='source ~/.zshrc'
 # Git Aliases
 alias gs='git status'
 alias gstsh='git stash'
-alias gst='git stash'
+alias gst='git status'
 alias gsp='git stash pop'
 alias gsa='git stash apply'
 alias gsh='git show'
